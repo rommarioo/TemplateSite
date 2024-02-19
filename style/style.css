@@ -39,10 +39,13 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
+* {
+  box-sizing: border-box;
+}
  html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  
 }
 
 /* Sections
@@ -55,7 +58,9 @@
 body {
   margin: 0;
 }
-
+ul {
+  padding: 0;
+}
 /**
  * Render the `main` element consistently in IE.
  */
@@ -408,4 +413,106 @@ template {
 	--colour-secondary-yellow-200: #fff2d2;
 	--colour-secondary-yellow-100: #fff6e0;
 	--icon-black: #000;
+  --font-family: 'Roboto', 'sabs-serif';
+  --padding-inline: 165px;
+}
+
+body {
+  font-family: var(--font-family);
+}
+.button {
+  background-color: var(--colour-main-blue-800);
+  border-radius: 2px;
+  height: 26px;
+}
+.header-button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  border: 0px;
+  color: var(--colour-secondary-white-100-general);
+  padding-inline: 56px; 
+}
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  justify-content: space-between;
+  padding-inline: var(--padding-inline);
+  padding-top: 18px;
+  
+}
+
+.header-menu-list {
+  display: flex;
+  column-gap: 60px;
+  list-style-type: none;
+
+}
+.header-menu-link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--colour-main-blue-500);
+}
+.header-menu {
+  display: flex;
+}
+.backgroud-image {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -100;
+  
+  
+}
+
+@media (max-width: 1000px) {
+  .header {
+   
+    padding-inline: 120px;
+  }
+  .backgroud-image {
+    width: 90vw;
+    height: 90vh;
+  }
+  .header-menu-list {
+    
+    column-gap: 40px;
+    
+  
+  }
+}
+@media (max-width: 750px) {
+  .header {
+    flex-wrap: wrap;
+    padding-inline: 100px
+    ;
+  }
+  .header-menu {
+    order: 1;
+  }
+  .header-menu-list {
+    
+    column-gap: 10px;
+    
+  
+  }
+  .header-button {
+  
+    padding-inline: 20px; 
+  }
+  .backgroud-image {
+    
+
+}
+  
+@media (max-width: 450px) {
+  .header {
+    flex-wrap: wrap;
+    padding-inline: 50px;
+  }
+  
+
 }
