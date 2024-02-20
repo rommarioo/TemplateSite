@@ -481,8 +481,8 @@ body {
 .banner {
   display: flex;
   padding-inline: 40px;
-  min-height: 100vh;
-  max-width: 580px;
+  min-height: 1113px;
+  max-width: 620px;
   flex-direction: column;
   justify-content: center;
   align-items: start;
@@ -513,6 +513,44 @@ color: var(--colour-main-blue-900);
 }
 .backgroud-image {
     width: 90vw;
+  }
+  .features {
+     padding-inline: 152px;
+    max-height: 742px;
+  }
+  .features-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 133%;
+  color: var(--colour-main-blue-900);
+  }
+  .features-list {
+    list-style-type: none;
+  }
+  .features-info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--colour-main-blue-400);
+  }
+  .features-card {
+    display: flex;
+    column-gap: 30px;
+    }
+  .features-card-item {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--colour-main-grey-600);
+  }
+  .features-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 45px;
+  }
+  .features-body {
+    max-width: 540px;
   }
 @media (max-width: 1000px) {
   .header {
