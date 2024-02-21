@@ -560,14 +560,25 @@ color: var(--colour-main-blue-900);
     align-items: center;
     background-image: url(../image/Rectangle.svg);
   }
-  .undeground-background {
+  /* .undeground-background {
     position: relative;
     z-index: -100;
     
-  }
+  } */
   .underground-body {
     width: 41vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+  }
+  .underground-description {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    
+    color: var(--colour-main-blue-400);
   }
   .underground-title {
     font-weight: 500;
@@ -575,6 +586,34 @@ color: var(--colour-main-blue-900);
     line-height: 133%;
     text-align: center;
     color: var(--colour-main-blue-900);
+  }
+  .underground-action {
+    display: flex;
+    flex-direction: column;
+  }
+  .underground-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .underground-price-title { 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    margin-top: 0px;
+
+    margin-bottom: 60px;
+    color: var(--colour-main-blue-600);
+  }
+  .underground-title-button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    color: var(--colour-main-blue-400);
+    margin-bottom: 10px;
   }
   @media (max-width: 1200px) {
     .features-image {
@@ -613,6 +652,12 @@ color: var(--colour-main-blue-900);
   .banner {
     min-height: 600px;
   }
+  .underground-title{
+    font-size: 30px;
+  }
+  .underground-description {
+    font-size: 15px;     
+  }
 }
 @media (max-width: 900px) {
   .features-item {
@@ -647,6 +692,12 @@ color: var(--colour-main-blue-900);
     .banner-info {
     font-size: 10px;     
   }
+  .underground-title{
+    font-size: 20px;
+  }
+  .underground-description {
+    font-size: 10px;     
+  }
   .banner-button-transparent {
       background-color: #F3F5FF;
   }
@@ -673,6 +724,21 @@ color: var(--colour-main-blue-900);
 }
 .features-info {
   font-size: 10px;
+}
+.underground-price-icon {
+  width: 10vw;
+}
+.underground-price-title {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.underground-title-button {
+  
+    font-size: 10px;
+}
+.underground-button {
+  padding-inline: 20px; 
+    font-size: 10px;
 }
 }
 
