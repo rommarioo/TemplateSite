@@ -419,8 +419,7 @@ template {
 
 body {
   font-family: var(--font-family);
-  width: 100vw;
-  height: 100vh;
+  
 }
 
 .button {
@@ -479,6 +478,7 @@ body {
 
 .banner {
   display: flex;
+  
   padding-inline: 40px;
   min-height: 900px;
   max-width: 620px;
@@ -552,6 +552,30 @@ color: var(--colour-main-blue-900);
   .features-body {
     max-width: 540px;
   }
+  .underground {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/Rectangle.svg);
+  }
+  .undeground-background {
+    position: relative;
+    z-index: -100;
+    
+  }
+  .underground-body {
+    width: 41vw;
+    
+  }
+  .underground-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 133%;
+    text-align: center;
+    color: var(--colour-main-blue-900);
+  }
   @media (max-width: 1200px) {
     .features-image {
       max-width: 50%;
@@ -563,7 +587,11 @@ color: var(--colour-main-blue-900);
    .features-title {
     font-size: 25px;
    }
+   .features-item-reverse {
+    padding-top: 25px;
+   }
   }
+
 @media (max-width: 1000px) {
   .header {
        padding-inline: 120px;
@@ -572,12 +600,26 @@ color: var(--colour-main-blue-900);
   .header-menu-list {
         column-gap: 40px;
    }
-   
-   
+   .backgroud-image {
+    width: 60%;
+    height: auto;
+   }
+   .banner-title {
+    font-size: 30px;
+  }
+    .banner-info {
+    font-size: 15px;     
+  }
+  .banner {
+    min-height: 600px;
+  }
 }
 @media (max-width: 900px) {
   .features-item {
     flex-direction: column-reverse;
+  }
+  .features-item-reverse {
+    flex-direction: column;
   }
   .features {
     padding-inline: 50px;
@@ -600,24 +642,38 @@ color: var(--colour-main-blue-900);
       padding-inline: 20px; 
   }
   .banner-title {
-    font-size: 30px;
+    font-size: 20px;
   }
     .banner-info {
-    font-size: 15px;     
+    font-size: 10px;     
   }
   .banner-button-transparent {
-    padding-inline: 20px; 
-    background-color: #F3F5FF;
+      background-color: #F3F5FF;
   }
   .banner-button {
     padding-inline: 20px; 
+    font-size: 10px;
   }
   .features-card-item {
        font-size: 10px;
   }
   .banner {
-    min-height: 700px;
+    min-height: 500px;
+    max-width: 400px;
   }
+  .features-image {
+    max-width: 50%;
+    height: auto;
+}
+.features-body {
+  max-width: 100%;
+}
+.features-title {
+  font-size: 15px;
+}
+.features-info {
+  font-size: 10px;
+}
 }
 
 @media (max-width: 450px) {
@@ -625,6 +681,16 @@ color: var(--colour-main-blue-900);
     flex-wrap: wrap;
     padding-inline: 50px;
   }
-  
-
+    .banner {
+    min-height: 300px;
+    max-width: 300px;
+}
+  .banner-button {
+    padding-inline: 10px; 
+    font-size: 10px;
+  }
+  .features-image {
+    max-width: 50%;
+    height: auto;
+}
 }
