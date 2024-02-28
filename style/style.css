@@ -435,7 +435,7 @@ body {
   padding-inline: 56px;
 }
 
-.header-button:hover {
+.button:hover {
   background-color: var(--colour-main-blue-400);
   transition-duration: 0.5s;
 }
@@ -551,11 +551,11 @@ body {
 }
 .underground {
   width: 100vw;
-  padding: 70px 70px;
+  padding: 90px 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../image/Rectangle.svg) 0% 35px / 100% no-repeat;
+  background: url(../image/Rectangle.svg) 0% 55px / 100% no-repeat;
   background-size: cover;
 }
 
